@@ -22,7 +22,7 @@ For example, running `python find.py 1 100` will result in output like this:
 ```
 
 I built this project to help come up with the design for a
-(t-shirt)[https://www.teepublic.com/t-shirt/74788750-math].
+[t-shirt](https://www.teepublic.com/t-shirt/74788750-math).
 
 # Additional Work
 
