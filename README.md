@@ -1,6 +1,6 @@
-# Expresison Finder
+# Expression Finder
 
-A simple application to explore the space of mathemtical expressions constructed by composing
+A simple application to explore the space of mathematical expressions constructed by composing
 a number of "interesting" functions applied to a set of "interesting" numbers.
 
 The algorithm will use each known operation and input value at most once per expression, which
@@ -29,17 +29,17 @@ I built this project to help come up with the design for a
 There's a lot of room for improvement here. Some ideas include:
 
 - Performance optimization. Right now, I just sprinkled in some `lru_cache` decorators
-  and called it a day. The runtime is completely CPU=bound, which makes using async pythong
+  and called it a day. The runtime is completely CPU=bound, which makes using async python
   not particularly useful. There might be something to be done with multiprocessing, but
   it's probably not worth the effort.
 - We could be a little smarter about where we put parentheses. The current implementation
   adds them everywhere to avoid all ambiguity, but the result could be a little bit nicer
   with some TLC.
 - Better output for LaTeX or Wolfram Alpha.  Alpha is forgiving enough to (mostly) accept
-  the current output (probably,) but it could stil be improved. LaTeX output should be
+  the current output (probably,) but it could still be improved. LaTeX output should be
   fairly straightforward, but I don't feel like doing it right now.
-- Some kind of branch triming logic to save time exploring branches that are doomed to
-  fail. Some of the functions are too chatoic to predict, but others are fairly well-behaved
+- Some kind of branch trimming logic to save time exploring branches that are doomed to
+  fail. Some of the functions are too chaotic to predict, but others are fairly well-behaved
   and can probably give some opportunity for pruning.
 
 Patches are always welcome, but keep in mind that I will definitely judge anyone who chooses
